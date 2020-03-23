@@ -297,19 +297,21 @@
         <div class="col-md-7 text-center">
           <h2 class="display-4" data-aos="fade-down">Contacto</h2>
           <p class="lead" data-aos="fade-down">994 402 950 / 958 784 868</p>
-          <form data-aos="fade-up">
+          <form action="https://formspree.io/soporte@segintel.pe"
+          method="POST" data-aos="fade-up">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Nombre y Apellido">
+              <input type="text" name="name" class="form-control" placeholder="Nombre y Apellido">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="Email">
+              <input type="email" name="_replyto" class="form-control" placeholder="Email">
             </div>
             <div class="form-group">
-              <textarea class="form-control" rows="3" placeholder="Mensaje"></textarea>
+              <textarea name="message" class="form-control" rows="3" placeholder="Mensaje"></textarea>
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-lg btn-primary">Enviar formulario</button>
             </div>
+            <input type="hidden" name="_next" value="https://jmaldonadopolo.github.io/segintel/"/>
           </form>
         </div>
       </div>
